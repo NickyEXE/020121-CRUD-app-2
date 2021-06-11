@@ -2,3 +2,5 @@
 <h3>By <%= @book.author %></h3>
 <p>Genre: <%= @book.genre %></p>
 <p>Year Published: <%= @book.year_published %></p>
+<%= button_to "Edit #{@book.title}", edit_book_path(@book), method: :get %>
+<%= button_to "Shred #{@book.title}", @book, method: :delete %>

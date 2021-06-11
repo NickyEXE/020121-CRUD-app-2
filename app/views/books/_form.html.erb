@@ -1,0 +1,11 @@
+<%= form_for @book do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br>
+  <%= f.label :genre %><br>
+  <%= f.text_field :genre %><br>
+  <%= f.label :author %><br>
+  <%= f.text_field :author %><br>
+  <%= f.label :year_published %><br>
+  <%= f.number_field :year_published, in: (1800..Date.current.year) %><br>
+  <%= f.submit %>
+<% end %>
