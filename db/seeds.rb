@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Book.create(title: "The Hitchhiker's Guide to the Galaxy", genre: "Sci-fi Comedy", author: "Douglas Adams", year_published: 1979)
